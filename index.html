@@ -9,15 +9,13 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            background-image: url("{{ url_for('static', filename='background1.jpg') }}");
-            background-size: cover; /* 背景图像会自动调整大小以覆盖整个屏幕 */
+            background-image: url('background1.jpg'); /* 替换为你的背景图片路径 */
+            background-size: cover; /* 使背景图像覆盖整个页面 */
             background-repeat: no-repeat; /* 防止背景图片重复 */
             background-attachment: fixed; /* 使背景图片在页面滚动时保持固定 */
+            color: white; /* 设置文本颜色，使其在深色背景上可见 */
         }
-         h1 {
-            color: white; /* 设置标题文字颜色，与背景图像形成对比 */
-        }
+
         .gallery {
             display: flex;
             flex-wrap: wrap;
